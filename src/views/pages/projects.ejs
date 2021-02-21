@@ -174,7 +174,7 @@
                       <table class="table card-table table-responsive table-responsive-large" style="width:100%">
                         <thead>
                           <tr>
-                            <th class="d-none d-md-table-cell">Project ID</th>
+                            <th class="d-none d-md-table-cell">SN</th>
                             <th>Project Name</th>
                             <th class="d-none d-md-table-cell">Project Type</th>
                             <th class="d-none d-md-table-cell">Project Path</th>
@@ -183,15 +183,15 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <% data.forEach(function(item){ %>
+                          <% data.forEach(function(item, index){ %>
                           <tr>
-                            <td class="d-none d-md-table-cell"><%= item._id %></td>
+                            <td class="d-none d-md-table-cell"><%= index+1 %></td>
                             <td>
                               <a class="text-dark" href=""> <%= item.project_name %></a>
                             </td>
                             <td class="d-none d-md-table-cell"><%= item.project_type %></td>
                             <td class="d-none d-md-table-cell"><%= item.project_path %></td>
-                            <td class="d-none d-md-table-cell"><%= item.created_at %></td>
+                            <td class="d-none d-md-table-cell"><%= moment(item.created_at).format('DD-MM-YYYY') %></td>
                             <td class="text-right">
                               <div class="dropdown show d-inline-block widget-dropdown">
                                 <a class="dropdown-toggle icon-burger-mini" href="" role="button" id="dropdown-recent-order1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
