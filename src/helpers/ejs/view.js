@@ -5,6 +5,7 @@ module.exports = (res, file_name, title, message = '', data) => {
         data    : data  || [] ,
         title   : title || '',
         message : message.message || message,
-        moment 	: moment 	
+        moment 	: moment,
+        JSON 	: JSON 	
     });
 }
