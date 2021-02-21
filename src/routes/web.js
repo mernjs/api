@@ -4,4 +4,8 @@ Route.route('/')
 	.get(WelcomeController.index)
 	.all(send405);
 
+Route.route('/projects')
+	.get(WelcomeController.projects)
+	.all(send405);
+
 module.exports = Route
