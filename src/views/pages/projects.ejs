@@ -177,7 +177,8 @@
                             <th class="d-none d-md-table-cell">SN</th>
                             <th>Project Name</th>
                             <th class="d-none d-md-table-cell">Project Type</th>
-                            <th class="d-none d-md-table-cell">Project Path</th>
+                            <th class="d-none d-md-table-cell">OS Username</th>
+                            <th class="d-none d-md-table-cell">OS Hostname</th>
                             <th class="d-none d-md-table-cell">Date</th>
                             <th>Actions</th>
                           </tr>
@@ -190,7 +191,8 @@
                               <a class="text-dark" href=""> <%= item.project_name %></a>
                             </td>
                             <td class="d-none d-md-table-cell"><%= item.project_type %></td>
-                            <td class="d-none d-md-table-cell"><%= item.project_path %></td>
+                            <td class="d-none d-md-table-cell"><%= item.os_username %></td>
+                            <td class="d-none d-md-table-cell"><%= item.os_hostname %></td>
                             <td class="d-none d-md-table-cell"><%= moment(item.created_at).format('DD-MM-YYYY') %></td>
                             <td class="text-right">
                               <div class="dropdown show d-inline-block widget-dropdown">
