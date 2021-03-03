@@ -2,6 +2,9 @@ const ProjectCommands = new mongoose.Schema({
   	project_name: {
     	type: String,
   	},
+    email: {
+      type: String,
+    },
     project_path: {
       type: String,
     },
